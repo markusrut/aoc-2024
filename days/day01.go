@@ -11,8 +11,7 @@ import (
 )
 
 func RunDay1Part1() {
-	// file, err := os.Open("inputs/day01_test.txt")
-	firstList, secondList := parseInputs()
+	firstList, secondList := parseDay1()
 
 	sort.Ints(firstList)
 	sort.Ints(secondList)
@@ -39,7 +38,7 @@ func RunDay1Part1() {
 }
 
 func RunDay1Part2() {
-	firstList, secondList := parseInputs()
+	firstList, secondList := parseDay1()
 
 	var scores []int
 
@@ -64,7 +63,7 @@ func RunDay1Part2() {
 	fmt.Println(sum)
 }
 
-func parseInputs() ([]int, []int) {
+func parseDay1() ([]int, []int) {
 	// file, err := os.Open("inputs/day01_test.txt")
 	file, err := os.Open("inputs/day01.txt")
 	if err != nil {
