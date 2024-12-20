@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"github.com/markusrut/aoc-2024/days"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	days.RunDay1Part2()
 }
